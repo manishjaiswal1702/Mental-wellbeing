@@ -97,9 +97,37 @@ html,body{
 #page1{
   width: 100%;
   height: 87vh;
-  background-color: rgb(185, 123, 116);
+  background-color: white;
 }
 
+#strip{
+  background-color: rgb(1, 49, 76);
+  width: 100%;
+  height: 8%;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#content{
+  background-color: rgb(168, 125, 125);
+  width: 100%;
+  height: 80%;
+}
+
+#heading{
+  width: 100%;
+  height: 12%;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 37px;
+  font-weight: bold;
+  color:rgb(2, 48, 95);
+}
 #page2{
   width: 100%;
   height: 90vh;
