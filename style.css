@@ -115,6 +115,21 @@ html,body{
   background-color: rgb(168, 125, 125);
   width: 100%;
   height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#box1{
+  width: 47%;
+  height: 95%;
+  background-color: azure;
+}
+
+#box2{
+  width: 47%;
+  height: 95%;
+  background-color: rgb(145, 207, 207);
 }
 
 #heading{
