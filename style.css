@@ -37,15 +37,56 @@ html,body{
 
 .texts{
   margin: 20px;
-  color: rgb(11, 11, 91);
+  color: rgb(3, 3, 52);
   font-weight: 540;
   font-size: large;
+}
 
+.texts:hover{
+  color: rgb(69, 134, 155);
 }
 
 #contact{
-  margin-left: 12rem;
+  margin-left: 10rem;
   font-weight: lighter;
+}
+
+#contact:hover{
+  color: rgb(17, 102, 131);
+}
+
+.icon{
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.icon:hover{
+  background-color: lightblue;
+}
+
+#login{
+  display: flex;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 50px;
+ 
+}
+
+#login:hover{
+  background-color: lightblue;
+}
+
+#try{
+  margin-left: 25px;
+  padding: 12px 20px;
+  background-color: rgb(2, 102, 2);
+  border-radius: 5px;
+  color:white;
+}
+
+#try:hover{
+  background-color: rgb(4, 49, 4);
 }
 
 #fakeheader{
