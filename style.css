@@ -79,14 +79,68 @@ html,body{
 
 #try{
   margin-left: 25px;
-  padding: 12px 20px;
-  background-color: rgb(2, 102, 2);
-  border-radius: 5px;
-  color:white;
+  padding: 12px 25px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  background-color: #000;
 }
 
-#try:hover{
-  background-color: rgb(4, 49, 4);
+#try::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+#try::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00ffd0, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+#try:hover::before {
+  opacity: 1;
+}
+
+#try:active:after {
+  background: transparent;
+}
+
+#try:active {
+  color: #000;
+  font-weight: bold;
 }
 
 #fakeheader{
