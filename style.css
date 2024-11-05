@@ -183,7 +183,14 @@ html,body{
 #box2{
   width: 47%;
   height: 95%;
-  /* background-color: rgb(145, 207, 207); */
+}
+
+video{
+  border-radius: 30px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 2.5rem;
+  border: solid black 1px;
 }
 
 #heading{
