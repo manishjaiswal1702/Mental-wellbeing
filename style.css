@@ -166,24 +166,24 @@ html,body{
 }
 
 #content{
-  background-color: rgb(168, 125, 125);
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-image: url('https://www.shutterstock.com/shutterstock/photos/1914992353/display_1500/stock-photo-hand-holding-paper-cut-smile-face-positive-thinking-mental-health-assessment-world-mental-1914992353.jpg');
 }
 
 #box1{
   width: 47%;
   height: 95%;
-  background-color: azure;
+  /* background-color: azure; */
 }
 
 #box2{
   width: 47%;
   height: 95%;
-  background-color: rgb(145, 207, 207);
+  /* background-color: rgb(145, 207, 207); */
 }
 
 #heading{
