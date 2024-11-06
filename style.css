@@ -35,6 +35,10 @@ html,body{
   object-fit: cover;
 }
 
+#logo img:hover{
+  cursor: pointer;
+}
+
 .texts{
   margin: 20px;
   color: rgb(3, 3, 52);
@@ -44,6 +48,7 @@ html,body{
 
 .texts:hover{
   color: rgb(69, 134, 155);
+  cursor: pointer;
 }
 
 #contact{
@@ -53,6 +58,7 @@ html,body{
 
 #contact:hover{
   color: rgb(17, 102, 131);
+  cursor: pointer;
 }
 
 .icon{
@@ -63,7 +69,19 @@ html,body{
 
 .icon:hover{
   background-color: lightblue;
+  cursor: pointer;
+} 
+
+#dark{
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 50%;
 }
+
+#dark:hover{
+  background-color: lightblue;
+  cursor: pointer;
+} 
 
 #login{
   display: flex;
@@ -75,6 +93,7 @@ html,body{
 
 #login:hover{
   background-color: lightblue;
+  cursor: pointer;
 }
 
 #try{
@@ -186,10 +205,20 @@ html,body{
 }
 
 video{
+  width: 90%;
+  height: 85%;
   border-radius: 30px;
   overflow: hidden;
   object-fit: cover;
   margin-top: 2.5rem;
+  box-shadow: 0 4px 8px rgba(1, 0.3, 0.3, 0.3);
+  display: block; 
+}
+
+video:hover{
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform: scale(1.01);
 }
 
 #heading{
