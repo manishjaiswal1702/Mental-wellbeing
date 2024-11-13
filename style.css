@@ -232,7 +232,7 @@ body.dark-mode {
 }
 
 body.dark-mode #header, body.dark-mode #content {
-  background-color: #333;
+  background-color: #181818;
   color: #ddd;
 }
 
@@ -243,14 +243,14 @@ body.dark-mode #try {
 }
 
 body.dark-mode #try {
-  background-color: #444;
+  background-color: #000000;
 }
 
 body.dark-mode #strip {
-  background-color: #1f1f1f;
+  background-color: #000000;
 }
 
 body.dark-mode #heading {
   color: #ffffff;
-  background-color: #333;
+  background-color: #000000;
 }
