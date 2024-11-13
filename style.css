@@ -1,250 +1,256 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-#main{
+/* Main Container */
+.main {
   width: 100%;
   height: 100%;
 }
 
-#header{
+/* Header */
+#header {
   width: 100%;
   height: 13vh;
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-#logo{
-  margin: 35px;
+#logo {
   height: 60%;
 }
 
-#logo img{
+#logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-#logo img:hover{
   cursor: pointer;
+  border-radius: 50%;
 }
 
-.texts{
-  margin: 20px;
+.texts {
+  margin: 0 15px;
   color: rgb(3, 3, 52);
   font-weight: 540;
   font-size: large;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.texts:hover{
+.texts:hover {
   color: rgb(69, 134, 155);
-  cursor: pointer;
 }
 
-#contact{
-  margin-left: 10rem;
+#contact {
+  margin-left: auto;
   font-weight: lighter;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-#contact:hover{
+#contact:hover {
   color: rgb(17, 102, 131);
-  cursor: pointer;
 }
 
-.icon{
+/* Icons */
+.icon, #dark, #login {
   margin-left: 20px;
   padding: 10px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.icon:hover{
+.icon:hover, #dark:hover, #login:hover {
   background-color: lightblue;
-  cursor: pointer;
-} 
-
-#dark{
-  margin-left: 20px;
-  padding: 10px;
-  border-radius: 50%;
 }
 
-#dark:hover{
-  background-color: lightblue;
-  cursor: pointer;
-} 
+/* Dark Mode Toggle */
+#dark i {
+  font-size: 1.5rem;
+}
 
-#login{
+/* Login */
+#login {
   display: flex;
-  margin-left: 20px;
+  align-items: center;
   padding: 10px;
   border-radius: 50px;
- 
 }
 
-#login:hover{
-  background-color: lightblue;
-  cursor: pointer;
-}
-
-#try{
+/* Try Button with Glow Effect */
+#try {
   margin-left: 25px;
   padding: 12px 25px;
   border: none;
-  outline: none;
   color: #ffffff;
   cursor: pointer;
-  position: relative;
-  z-index: 0;
   border-radius: 12px;
   background-color: #000;
+  position: relative;
+  z-index: 0;
 }
 
-#try::after {
+#try::before, #try::after {
   content: "";
-  z-index: -1;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  left: 0;
-  top: 0;
   border-radius: 10px;
+  z-index: -1;
 }
-/* glow */
+
 #try::before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00ffd0, #002BFF, #FF00C8, #FF0000
-  );
-  position: absolute;
+  background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00ffd0, #002BFF, #FF00C8, #FF0000);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   top: -2px;
   left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height:  calc(100% + 4px);
   filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+  background-size: 600%;
   opacity: 0;
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
 }
 
-@keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
-}
-
-/* hover */
 #try:hover::before {
   opacity: 1;
 }
 
-#try:active:after {
-  background: transparent;
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
-#try:active {
-  color: #000;
-  font-weight: bold;
-}
-
-#fakeheader{
+/* Placeholder to Push Content Below Fixed Header */
+#fakeheader {
   width: 100%;
   height: 13vh;
 }
 
-#page1{
+/* Page 1 Content */
+#page1 {
   width: 100%;
   height: 87vh;
   background-color: white;
 }
 
-#strip{
+#strip {
   background-color: rgb(1, 49, 76);
   width: 100%;
   height: 8%;
-  color: white;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: 25px;
+  color: white;
+  font-size: 1.5rem;
 }
 
-#content{
+#content {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: url('https://www.shutterstock.com/shutterstock/photos/1914992353/display_1500/stock-photo-hand-holding-paper-cut-smile-face-positive-thinking-mental-health-assessment-world-mental-1914992353.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
 }
 
-#box1{
-  width: 47%;
-  height: 95%;
-  /* background-color: azure; */
-}
-
-#box2{
+#box1 {
   width: 47%;
   height: 95%;
 }
 
-video{
+#box2 {
+  width: 47%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+video {
   width: 90%;
   height: 85%;
   border-radius: 30px;
-  overflow: hidden;
-  object-fit: cover;
-  margin-top: 2.5rem;
-  box-shadow: 0 4px 8px rgba(1, 0.3, 0.3, 0.3);
-  display: block; 
-}
-
-video:hover{
-  cursor: pointer;
+  object-fit: cover; /* Ensures the video covers the box completely without distortion */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease;
-  transform: scale(1.01);
 }
 
-#heading{
+video:hover {
+  cursor: pointer;
+  transform: scale(1.01); /* Slight zoom effect on hover */
+}
+
+
+/* Heading */
+#heading {
   width: 100%;
   height: 12%;
-  background-color: rgb(255, 255, 255);
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: 37px;
+  font-size: 2.3rem;
   font-weight: bold;
-  color:rgb(2, 48, 95);
-}
-#page2{
-  width: 100%;
-  height: 90vh;
-  background-color: white;
+  color: rgb(2, 48, 95);
 }
 
-#page3{
+/* Additional Pages */
+#page2, #page3 {
   width: 100%;
   height: 90vh;
+}
+
+#page3 {
   background-color: rgb(202, 87, 87);
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
 
+body.dark-mode #header, body.dark-mode #content {
+  background-color: #333;
+  color: #ddd;
+}
 
+body.dark-mode .texts,
+body.dark-mode #contact,
+body.dark-mode #try {
+  color: #e0e0e0;
+}
 
+body.dark-mode #try {
+  background-color: #444;
+}
 
+body.dark-mode #strip {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode #heading {
+  color: #ffffff;
+  background-color: #333;
+}
