@@ -217,7 +217,7 @@ video:hover {
   justify-content: center;
   font-size: 2.3rem;
   font-weight: bold;
-  color: rgb(2, 48, 95);
+  color: rgb(1,49,76);
 }
 
 /* Additional Pages */
@@ -239,7 +239,8 @@ video:hover {
   justify-content: center;
   overflow: hidden;
   border: solid black;
-  border-radius: 50%;
+  border-radius: 20%;
+  background-color: rgb(1,49,76);
 }
 /* Footer */
 #footer {
