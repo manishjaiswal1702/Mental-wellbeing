@@ -228,6 +228,7 @@ video:hover {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  background-color: white;
 }
 
 .box{
