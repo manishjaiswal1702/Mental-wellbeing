@@ -322,6 +322,14 @@ video:hover {
   padding: 1rem 0;
 }
 
+/* Chatbot container styles */
+#chatbot-container {
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+margin-bottom: 88px;
+margin-right: 50px;
+}
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #121212;

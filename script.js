@@ -14,3 +14,13 @@ darkModeToggle.addEventListener('click', () => {
         icon.classList.replace('ri-moon-fill', 'ri-sun-fill');
     }
 });
+
+// Function to toggle chatbot visibility
+function openChatbot() {
+    const chatbotContainer = document.getElementById('chatbot-container');
+    if (chatbotContainer.style.display === 'none' || chatbotContainer.style.display === '') {
+        chatbotContainer.style.display = 'block';
+    } else {
+        chatbotContainer.style.display = 'none';
+    }
+}
