@@ -279,7 +279,8 @@ h4{
 .footer-section h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: #FFD700; /* Gold */
+  color: #FFD700;
+  margin-right: 100px;
 }
 
 .footer-section p, .footer-section ul, .footer-section li {
