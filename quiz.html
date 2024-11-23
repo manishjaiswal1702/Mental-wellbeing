@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Check-Up Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Check-Up</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. How often do you feel overwhelmed by stress?</p>
+                <label><input type="radio" name="q1" value="0"> Never</label><br>
+                <label><input type="radio" name="q1" value="1"> Occasionally</label><br>
+                <label><input type="radio" name="q1" value="2"> Often</label><br>
+                <label><input type="radio" name="q1" value="3"> Always</label>
+            </div>
+
+            <div class="question">
+                <p>2. In the past two weeks, how often have you felt down, depressed, or hopeless?</p>
+                <label><input type="radio" name="q2" value="0"> Not at all</label><br>
+                <label><input type="radio" name="q2" value="1"> Several days</label><br>
+                <label><input type="radio" name="q2" value="2"> More than half the days</label><br>
+                <label><input type="radio" name="q2" value="3"> Nearly every day</label>
+            </div>
+
+            <div class="question">
+                <p>3. How often do you find it difficult to concentrate or make decisions?</p>
+                <label><input type="radio" name="q3" value="0"> Never</label><br>
+                <label><input type="radio" name="q3" value="1"> Occasionally</label><br>
+                <label><input type="radio" name="q3" value="2"> Often</label><br>
+                <label><input type="radio" name="q3" value="3"> Always</label>
+            </div>
+
+            <div class="question">
+                <p>4. Do you feel socially isolated or disconnected from others?</p>
+                <label><input type="radio" name="q4" value="0"> Never</label><br>
+                <label><input type="radio" name="q4" value="1"> Sometimes</label><br>
+                <label><input type="radio" name="q4" value="2"> Often</label><br>
+                <label><input type="radio" name="q4" value="3"> Always</label>
+            </div>
+
+            <div class="question">
+                <p>5. In the last month, how often have you experienced changes in your sleep patterns (e.g., difficulty falling asleep, waking up early)?</p>
+                <label><input type="radio" name="q5" value="0"> Never</label><br>
+                <label><input type="radio" name="q5" value="1"> Occasionally</label><br>
+                <label><input type="radio" name="q5" value="2"> Often</label><br>
+                <label><input type="radio" name="q5" value="3"> Almost every night</label>
+            </div>
+
+            <div class="question">
+                <p>6. How often do you experience feelings of anxiety or nervousness?</p>
+                <label><input type="radio" name="q6" value="0"> Never</label><br>
+                <label><input type="radio" name="q6" value="1"> Occasionally</label><br>
+                <label><input type="radio" name="q6" value="2"> Often</label><br>
+                <label><input type="radio" name="q6" value="3"> Always</label>
+            </div>
+
+            <div class="question">
+                <p>7. How often do you engage in activities that you enjoy?</p>
+                <label><input type="radio" name="q7" value="0"> Never</label><br>
+                <label><input type="radio" name="q7" value="1"> Occasionally</label><br>
+                <label><input type="radio" name="q7" value="2"> Often</label><br>
+                <label><input type="radio" name="q7" value="3"> Always</label>
+            </div>
+
+            <div class="question">
+                <p>8. How would you rate your overall mood in the last few weeks?</p>
+                <label><input type="radio" name="q8" value="0"> Very positive</label><br>
+                <label><input type="radio" name="q8" value="1"> Neutral</label><br>
+                <label><input type="radio" name="q8" value="2"> Low but manageable</label><br>
+                <label><input type="radio" name="q8" value="3"> Very negative</label>
+            </div>
+
+            <div class="question">
+                <p>9. How often do you have negative thoughts about yourself or your life?</p>
+                <label><input type="radio" name="q9" value="0"> Never</label><br>
+                <label><input type="radio" name="q9" value="1"> Occasionally</label><br>
+                <label><input type="radio" name="q9" value="2"> Often</label><br>
+                <label><input type="radio" name="q9" value="3"> Always</label>
+            </div>
+
+            <div class="question">
+                <p>10. Have you been able to cope with your daily responsibilities (work, family, personal tasks)?</p>
+                <label><input type="radio" name="q10" value="0"> Easily</label><br>
+                <label><input type="radio" name="q10" value="1"> With some difficulty</label><br>
+                <label><input type="radio" name="q10" value="2"> Often struggle</label><br>
+                <label><input type="radio" name="q10" value="3"> Unable to manage</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
